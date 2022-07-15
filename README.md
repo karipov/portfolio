@@ -1,3 +1,3 @@
-# Create T3 App
+# Porfolio
 
-This is an app bootstrapped according to the [init.tips](https://init.tips) stack, also known as the T3-Stack.
+My personal website, written according to the init.tips stack (`npx create-t3-app`)
