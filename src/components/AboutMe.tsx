@@ -5,8 +5,8 @@ const AboutMe: NextPage = () => {
     <div>
       <p className="text-3xl font-bold"> Hi! My name is Komron.</p>
       <p className="text-lg">
-        I'm a sophomore at Brown University studying Computer Science. In my
-        free time, I build things.
+        I&apos;m a sophomore at Brown University studying Computer Science. In
+        my free time, I build things.
       </p>
     </div>
   );

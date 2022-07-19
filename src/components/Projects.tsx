@@ -12,11 +12,11 @@ interface ProjectProps {
   projects: Project[];
 }
 
-export default function ({ projects }: ProjectProps) {
+export default function Projects({ projects }: ProjectProps) {
   return (
     <div className="grid">
-      {projects.map((project) => (
-        <div>{project.title}</div>
+      {projects.map((project, index) => (
+        <div key={index}>{project.title}</div>
       ))}
     </div>
   );
