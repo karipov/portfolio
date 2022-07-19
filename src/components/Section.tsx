@@ -1,14 +1,13 @@
-import { ReactNode } from "react";
+import React from "react";
 
 interface Props {
   title: String;
-  children: ReactNode;
 }
 
-export default function ({ title, children }: Props) {
+export default function ({ title, children }: React.PropsWithChildren<Props>) {
   return (
-    <div className="py-5">
-      <div className="">{title}</div>
+    <div className="mt-10">
+      <div className="text-xl font-bold">{title}</div>
       {children}
     </div>
   );

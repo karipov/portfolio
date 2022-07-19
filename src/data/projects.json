@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Drone Photogrammetry",
+        "description": "Researched and put together a proposal to construct a drone; received a $1000 grant from the School of Engineering",
+        "image": "projects/drone.jpg",
+        "href": "https://drive.google.com/file/d/1S-HymQDUUF00MMP9HynJ1zk09BIe7lv9/view",
+        "stack": ["Python", "Embedded Electronics", "Computer Vision", "Raspberry Pi"]
+
+    }
+]
