@@ -9,8 +9,8 @@ export default function Section({
   children,
 }: React.PropsWithChildren<Props>) {
   return (
-    <div className="mt-10">
-      <div className="text-xl font-bold">{title}</div>
+    <div className="my-10">
+      <div className="text-3xl sm:text-4xl font-bold my-3">{title}</div>
       {children}
     </div>
   );
