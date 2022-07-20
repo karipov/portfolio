@@ -2,15 +2,22 @@
     {
         "title": "Drone Photogrammetry",
         "description": "Researched and put together a proposal to construct a drone; received a $1000 grant from the School of Engineering",
-        "image": "projects/drone.jpg",
+        "image": "projects/dalle_drone.jpg",
         "href": "https://drive.google.com/file/d/1S-HymQDUUF00MMP9HynJ1zk09BIe7lv9/view",
         "stack": ["Python", "Embedded Electronics", "Computer Vision", "Raspberry Pi"]
     },
     {
         "title": "Genetic Salesman",
-        "description": "mplemented a genetic algorithm to solve the traveling salesman problem; wrote an overview paper discussing NP-Hardness, sampling with bias and parameter tuning",
-        "image": "projects/genetic.jpg",
+        "description": "Implemented a genetic algorithm to solve the traveling salesman problem; wrote an overview paper discussing NP-Hardness, sampling with bias and parameter tuning",
+        "image": "projects/dalle_genetic.jpg",
         "href": "https://github.com/karipov/genetic-salesman/blob/master/paper.ipynb",
         "stack": ["Python", "Numpy", "Jupyter Labs", "Matplotlib"]
+    },
+    {
+        "title": "Tag Track",
+        "description": "Wrote a suggestions and issues tracker for Telegram's bug testing program, synced with Trello and used by over 10K testers and developers",
+        "image": "projects/trello.jpg",
+        "href": "https://github.com/karipov/tagtrack",
+        "stack": ["Python", "Async", "REST", "Trello"]
     }
 ]
