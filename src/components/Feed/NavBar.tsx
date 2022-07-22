@@ -6,6 +6,21 @@ import { useState } from "react";
 export default function NavBar() {
   const [menu, setMenu] = useState(false);
 
+  const links = [
+    {
+      name: "/HOME",
+      href: "/",
+    },
+    {
+      name: "/COURSES",
+      href: "/courses",
+    },
+    {
+      name: "/RESUME",
+      href: "",
+    },
+  ];
+
   return (
     <div
       className={`w-full flex ${
@@ -14,24 +29,39 @@ export default function NavBar() {
     >
       <p className="grow">Komron Aripov</p>
 
-      {/* hamburger button */}
-      <button onClick={() => setMenu(!menu)} className="sm:hidden">
-        {menu ? "CLOSE" : "MENU"}
-      </button>
+      {links.map((link, index) => (
+        <div
+          className={`text-center hover:text-gray-600 dark:hover:text-gray-300 ${
+            menu ? "" : "hidden sm:flex"
+          }`}
+        >
+          <Link href={link.href}>
+            <a>{link.name}</a>
+          </Link>
+        </div>
+      ))}
 
-      <div className={menu ? "" : "hidden sm:flex"}>
-        <Link href="/">
-          <a>/home</a>
-        </Link>
-      </div>
-      <div className={menu ? "" : "hidden sm:flex"}>
-        <Link href="/courses">
-          <a>/courses</a>
-        </Link>
-      </div>
-      <div className="hidden sm:flex">
-        <a href="">/resume</a>
-      </div>
+      {/* menu button */}
+      <button onClick={() => setMenu(!menu)} className="sm:hidden self-center">
+        {menu ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        ) : (
+          "MENU"
+        )}
+      </button>
     </div>
   );
 }
