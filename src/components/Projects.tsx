@@ -23,6 +23,7 @@ export default function Projects({ projects }: ProjectProps) {
           <img
             className="w-full border-b dark:border-gray-600 rounded-t-lg aspect-[2/1]"
             src={project.image}
+            alt={project.title}
           />
           <div className="text-xl md:text-2xl m-4 font-bold">
             {project.title}
