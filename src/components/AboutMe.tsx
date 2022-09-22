@@ -33,7 +33,10 @@ const AboutMe: NextPage = () => {
       </p>
       <div className="flex gap-3 my-3">
         {icons.map((icon, index) => (
-          <div className="px-4 pb-2 pt-3 border-2 rounded-lg" key={index}>
+          <div
+            className="px-4 pb-2 pt-3 border rounded-lg hover:bg-gray-100"
+            key={index}
+          >
             <button
               onClick={() => {
                 window.open(icon.link, "_blank");
