@@ -10,14 +10,17 @@ export default function NavBar() {
     {
       name: "/HOME",
       href: "/",
+      new_page: false,
     },
     {
       name: "/COURSES",
-      href: "/courses",
+      href: "https://karipov.notion.site/38c744b89f774658aacd8b9bb4345762?v=43fe5ca27a8e44bebc160fbc60355baf",
+      new_page: true,
     },
     {
       name: "/RESUME",
-      href: "",
+      href: "resume/resume.pdf",
+      new_page: true,
     },
   ];
 
@@ -37,7 +40,7 @@ export default function NavBar() {
           }`}
         >
           <Link href={link.href}>
-            <a>{link.name}</a>
+            <a target={link.new_page ? "_blank" : ""}>{link.name}</a>
           </Link>
         </div>
       ))}

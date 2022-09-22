@@ -34,7 +34,7 @@ const AboutMe: NextPage = () => {
       <div className="flex gap-3 my-3">
         {icons.map((icon, index) => (
           <div
-            className="px-4 pb-2 pt-3 border rounded-lg hover:bg-gray-100"
+            className="px-4 pb-2 pt-3 border rounded-lg border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600"
             key={index}
           >
             <button
@@ -43,7 +43,11 @@ const AboutMe: NextPage = () => {
               }}
               className="h-4 w-4"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox={icon.viewbox}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox={icon.viewbox}
+                className="fill-black dark:fill-white"
+              >
                 <path d={icon.data} />
               </svg>
             </button>
