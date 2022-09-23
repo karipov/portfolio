@@ -33,25 +33,22 @@ const AboutMe: NextPage = () => {
       </p>
       <div className="flex gap-3 my-3">
         {icons.map((icon, index) => (
-          <div
-            className="px-4 pb-2 pt-3 border rounded-lg border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600"
+          <button
+            onClick={() => {
+              window.open(icon.link, "_blank");
+            }}
             key={index}
           >
-            <button
-              onClick={() => {
-                window.open(icon.link, "_blank");
-              }}
-              className="h-4 w-4"
-            >
+            <div className="py-3 px-3 border rounded-lg border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox={icon.viewbox}
-                className="fill-black dark:fill-white"
+                className="h-5 w-5 fill-black dark:fill-white"
               >
                 <path d={icon.data} />
               </svg>
-            </button>
-          </div>
+            </div>
+          </button>
         ))}
       </div>
     </div>
